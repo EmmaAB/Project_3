@@ -27,7 +27,7 @@ However, using ‘Volume’, ‘Year’, and ‘Month’ as inputs to predict th
 The Naive Bayes model delivered better results and accuracy when using ‘Categories’ to determine the ‘Round’.  We were able to build the model so that it would analyze the text in each category and classify it as either a ‘Jeopardy’ or ‘Final Jeopardy’.  The accuracy for this model was 0.72.
 
 
-<h1>Visualizations Using Tableau<h1>
+<h1>Visualizations Using Tableau</h1>
 
 Top 20 Categories in Jeopardy
 The top category in Jeopardy is Before and After with 557 different questions within the category. Science is a close second at 551. The lowest appears to be Opera at 299.
