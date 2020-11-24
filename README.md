@@ -8,7 +8,7 @@ We decided to use Jeopardy data from 1984 to 2012. We analyzed the data to predi
 [Tableau Visualization](https://public.tableau.com/profile/jasveen.sodhi#!/vizhome/Jeopardy_Analysis/JeopardyAnalysisStory?publish=yes) to create visualizations to provide more insight to the data and present our findings. 
 
 <h1>Clean The Data</h1>
-[jeopardy.csv]https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv)
+[jeopardy.csv](https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv)
 <br></br>
 [jeopardy_new.csv](https://github.com/EmmaAB/Project_3/blob/main/jeopardy_new(2).csv)
 <br></br>
