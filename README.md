@@ -3,7 +3,7 @@
 Braden, Kang, Limoli, Sodhi
 
 <h1>Summary</h1>
-We decided to use Jeopardy data from 1984 to 2012. We analyzed the data to predict the value of the type of Jeopardy round (Double Jeopardy Vs. Jeopardy). We used machine learning to build a model to predict the outcome. We took the data from Kaggle.com [jeopardy.csv] (https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv) and cleaned it before putting it into a logistic regression, deep learning, Naive Bayes, and a linear regression model. We also used the data in [Tableau](https://public.tableau.com/profile/jasveen.sodhi#!/vizhome/Jeopardy_Analysis/Story1?publish=yes) to create visualizations to provide more insight to the data and present our findings. 
+We decided to use Jeopardy data from 1984 to 2012. We analyzed the data to predict the value of the type of Jeopardy round (Double Jeopardy Vs. Jeopardy). We used machine learning to build a model to predict the outcome. We took the data from Kaggle.com [jeopardy.csv] (https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv) and cleaned it before putting it into a logistic regression, deep learning, Naive Bayes, and a linear regression model. We also used the data in [Tableau](https://public.tableau.com/profile/jasveen.sodhi#!/vizhome/Jeopardy_Analysis/JeopardyAnalysisStory?publish=yes) to create visualizations to provide more insight to the data and present our findings. 
 
 <h1>Clean The Data</h1>
 [jeopardy.csv](https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv)
@@ -56,4 +56,4 @@ Double jeopardy has the highest value in comparison to the other rounds since th
 The total number of questions categorized as ‘Jeopardy’ and ‘Final Jeopardy’ are pretty much the same, however when you compare them based on their average value, the difference is significant.    This triggered our interest in seeing how random the questions were and to see if we could use machine learning to predict if a specific category would likely be a ‘Jeopardy’ or a ‘Final Jeopardy’ outcome.
 
 
-[Tableau Visualization](https://public.tableau.com/profile/jasveen.sodhi#!/vizhome/Jeopardy_Analysis/Story1?publish=yes) 
+[Tableau Visualization](https://public.tableau.com/profile/jasveen.sodhi#!/vizhome/Jeopardy_Analysis/JeopardyAnalysisStory?publish=yes) 
