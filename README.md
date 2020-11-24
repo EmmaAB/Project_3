@@ -3,13 +3,13 @@
 Braden, Kang, Limoli, Sodhi
 
 <h1>Summary</h1>
-We decided to use Jeopardy data from 1984 to 2012. We analyzed the data to predict the value of the type of Jeopardy round (Double Jeopardy Vs. Jeopardy). We used machine learning to build a model to predict the outcome. We took the data from Kaggle.com [jeopardy.csv](https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv) and cleaned it before putting it into a logistic regression, deep learning, Naive Bayes, and a linear regression model. We also used the data in [Tableau](https://public.tableau.com/profile/jasveen.sodhi#!/vizhome/Jeopardy_Analysis/Story1?publish=yes) to create visualizations to provide more insight to the data and present our findings. 
+We decided to use Jeopardy data from 1984 to 2012. We analyzed the data to predict the value of the type of Jeopardy round (Double Jeopardy Vs. Jeopardy). We used machine learning to build a model to predict the outcome. We took the data from Kaggle.com [jeopardy.csv] (https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv) and cleaned it before putting it into a logistic regression, deep learning, Naive Bayes, and a linear regression model. We also used the data in [Tableau](https://public.tableau.com/profile/jasveen.sodhi#!/vizhome/Jeopardy_Analysis/Story1?publish=yes) to create visualizations to provide more insight to the data and present our findings. 
 
 <h1>Clean The Data</h1>
-[jeopardy.csv](https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv)
-[jeopardy_new.csv](https://github.com/EmmaAB/Project_3/blob/main/jeopardy_new(2).csv)
-[updated_jeopardy_clean.ipynb](https://github.com/EmmaAB/Project_3/blob/main/updated_jeopardy_clean.ipynb)
-[schema](https://github.com/EmmaAB/Project_3/blob/main/schema.sql)
+[jeopardy.csv] (https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv)
+[jeopardy_new.csv] (https://github.com/EmmaAB/Project_3/blob/main/jeopardy_new(2).csv)
+[updated_jeopardy_clean.ipynb] (https://github.com/EmmaAB/Project_3/blob/main/updated_jeopardy_clean.ipynb)
+[schema] (https://github.com/EmmaAB/Project_3/blob/main/schema.sql)
 
 We initially used Colab and Amazon Web Services (AWS) to store and clean the data. We uploaded the CSV into AWS and then set up a Spark session to connect Colab to the stored data. For most of the cleaning, we used PySpark. Some of the issues we came up against were dropping nulls, punctuation in the columns, getting rid of special characters, changing strings to integers, and going back and forth between an array and a dataframe. Once the data was cleaned, we put it into the database in Postgres [schema](https://github.com/EmmaAB/Project_3/blob/main/schema.sql) and then deleted all of the rows that said ‘tiebreaker’ and ‘final jeopardy’ because their values were 0. Once the queries were finished, it was exported into a new CSV called [jeopardy.csv](https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv) which was then used for the machine learning models.
 
