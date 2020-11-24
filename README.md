@@ -10,7 +10,7 @@ We decided to use Jeopardy data from 1984 to 2012. We analyzed the data to predi
 <br></br>
 [jeopardy_new.csv](https://github.com/EmmaAB/Project_3/blob/main/jeopardy_new(2).csv)
 <br></br>
-[updated_jeopardy_clean.ipynb](https://github.com/EmmaAB/Project_3/blob/main/updated_jeopardy_clean.ipynb)
+[Cleaned Colab](https://github.com/EmmaAB/Project_3/blob/main/updated_jeopardy_clean.ipynb)
 <br></br>
 [schema](https://github.com/EmmaAB/Project_3/blob/main/schema.sql)
 <br></br>
