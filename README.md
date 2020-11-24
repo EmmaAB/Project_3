@@ -30,9 +30,11 @@ Using the cleaned data from the AWS database, we started with a linear model, us
 [Neural Network/Deep Learning2](https://github.com/EmmaAB/Project_3/blob/main/neural_deep_3.ipynb)
 <br></br>
 We discovered that with the neural network model, the accuracy was very low in determining the ‘Round’ outcome using ‘Categories’ as the input.  For both Neural Network and Deep learning models the accuracy was the same at around 0.50.  
+
 However, using ‘Volume’, ‘Year’, and ‘Month’ as inputs to predict the round, we found a much better accuracy at .7157 and interestingly enough, the deep learning model delivered a lower accuracy rate at 0.6880, which shows that more layers doesn’t necessarily deliver better results.  
-<br></br>
+
 [Naive Bayes](https://github.com/EmmaAB/Project_3/blob/main/naivebayes.ipynb)
+<br></br>
 The Naive Bayes model delivered better results and accuracy when using ‘Categories’ to determine the ‘Round’.  We were able to build the model so that it would analyze the text in each category and classify it as either a ‘Jeopardy’ or ‘Final Jeopardy’.  The accuracy for this model was 0.72.
 
 
