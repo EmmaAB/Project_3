@@ -18,9 +18,9 @@ We decided to use Jeopardy data from 1984 to 2012. We analyzed the data to predi
 We initially used Colab and Amazon Web Services (AWS) to store and clean the data. We uploaded the CSV into AWS and then set up a Spark session to connect Colab to the stored data. For most of the cleaning, we used PySpark. Some of the issues we came up against were dropping nulls, punctuation in the columns, getting rid of special characters, changing strings to integers, and going back and forth between an array and a dataframe. Once the data was cleaned, we put it into the database in Postgres [schema](https://github.com/EmmaAB/Project_3/blob/main/schema.sql) and then deleted all of the rows that said ‘tiebreaker’ and ‘final jeopardy’ because their values were 0. Once the queries were finished, it was exported into a new CSV called [jeopardy.csv](https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv) which was then used for the machine learning models.
 
 <h1>Machine Learning Models</h1>
-[Linear_Regression](https://github.com/EmmaAB/Project_3/blob/main/linear_regression.ipynb)
+[Linear Regression](https://github.com/EmmaAB/Project_3/blob/main/linear_regression.ipynb)
 <br></br>
-[Logistic_Regression](https://github.com/EmmaAB/Project_3/blob/main/logistic_regression.ipynb)
+[Logistic Regression](https://github.com/EmmaAB/Project_3/blob/main/logistic_regression.ipynb)
 <br></br>
 Using the cleaned data from the AWS database, we started with a linear model, using all the inputs in the data to try to guess the value of a question. The linear regression model was only 9% accurate, so we moved on to a logistic regression model hoping to predict what types of questions end up being Double Jeopardy!, models with all inputs or with value alone are almost 70% accurate, while a model with all inputs but value is 50% accurate. Value is the explanatory variable that does the most work predicting the round of the questions. 
 <br></br>
