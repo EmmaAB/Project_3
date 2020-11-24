@@ -6,7 +6,8 @@ Braden, Kang, Limoli, Sodhi
 We decided to use Jeopardy data from 1984 to 2012. We analyzed the data to predict the value of the type of Jeopardy round (Double Jeopardy Vs. Jeopardy). We used machine learning to build a model to predict the outcome. We took the data from Kaggle.com [jeopardy.csv] (https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv) and cleaned it before putting it into a logistic regression, deep learning, Naive Bayes, and a linear regression model. We also used the data in [Tableau](https://public.tableau.com/profile/jasveen.sodhi#!/vizhome/Jeopardy_Analysis/Story1?publish=yes) to create visualizations to provide more insight to the data and present our findings. 
 
 <h1>Clean The Data</h1>
-[jeopardy.csv] (https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv)
+[jeopardy.csv](https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv)
+<br></br>
 [jeopardy_new.csv] (https://github.com/EmmaAB/Project_3/blob/main/jeopardy_new(2).csv)
 [updated_jeopardy_clean.ipynb] (https://github.com/EmmaAB/Project_3/blob/main/updated_jeopardy_clean.ipynb)
 [schema] (https://github.com/EmmaAB/Project_3/blob/main/schema.sql)
