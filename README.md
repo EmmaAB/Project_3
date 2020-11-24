@@ -8,11 +8,11 @@ We decided to use Jeopardy data from 1984 to 2012. We analyzed the data to predi
 <h1>Clean The Data</h1>
 [jeopardy.csv](https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv)
 <br></br>
-[jeopardy_new.csv] (https://github.com/EmmaAB/Project_3/blob/main/jeopardy_new(2).csv)
+[jeopardy_new.csv](https://github.com/EmmaAB/Project_3/blob/main/jeopardy_new(2).csv)
 <br></br>
-[updated_jeopardy_clean.ipynb] (https://github.com/EmmaAB/Project_3/blob/main/updated_jeopardy_clean.ipynb)
+[updated_jeopardy_clean.ipynb](https://github.com/EmmaAB/Project_3/blob/main/updated_jeopardy_clean.ipynb)
 <br></br>
-[schema] (https://github.com/EmmaAB/Project_3/blob/main/schema.sql)
+[schema](https://github.com/EmmaAB/Project_3/blob/main/schema.sql)
 <br></br>
 
 We initially used Colab and Amazon Web Services (AWS) to store and clean the data. We uploaded the CSV into AWS and then set up a Spark session to connect Colab to the stored data. For most of the cleaning, we used PySpark. Some of the issues we came up against were dropping nulls, punctuation in the columns, getting rid of special characters, changing strings to integers, and going back and forth between an array and a dataframe. Once the data was cleaned, we put it into the database in Postgres [schema](https://github.com/EmmaAB/Project_3/blob/main/schema.sql) and then deleted all of the rows that said ‘tiebreaker’ and ‘final jeopardy’ because their values were 0. Once the queries were finished, it was exported into a new CSV called [jeopardy.csv](https://github.com/EmmaAB/Project_3/blob/main/JEOPARDY_CSV.csv) which was then used for the machine learning models.
@@ -23,7 +23,7 @@ We initially used Colab and Amazon Web Services (AWS) to store and clean the dat
 [logistic_regression](https://github.com/EmmaAB/Project_3/blob/main/logistic_regression.ipynb)
 <br></br>
 Using the cleaned data from the AWS database, we started with a linear model, using all the inputs in the data to try to guess the value of a question. The linear regression model was only 9% accurate, so we moved on to a logistic regression model hoping to predict what types of questions end up being Double Jeopardy!, models with all inputs or with value alone are almost 70% accurate, while a model with all inputs but value is 50% accurate. Value is the explanatory variable that does the most work predicting the round of the questions. 
-
+<br></br>
 
 [Neural Network/Deep Learning](https://github.com/EmmaAB/Project_3/blob/main/neural_deep_1.ipynb)
 <br></br>
@@ -31,7 +31,7 @@ Using the cleaned data from the AWS database, we started with a linear model, us
 <br></br>
 We discovered that with the neural network model, the accuracy was very low in determining the ‘Round’ outcome using ‘Categories’ as the input.  For both Neural Network and Deep learning models the accuracy was the same at around 0.50.  
 However, using ‘Volume’, ‘Year’, and ‘Month’ as inputs to predict the round, we found a much better accuracy at .7157 and interestingly enough, the deep learning model delivered a lower accuracy rate at 0.6880, which shows that more layers doesn’t necessarily deliver better results.  
-
+<br></br>
 [Naive Bayes](https://github.com/EmmaAB/Project_3/blob/main/naivebayes.ipynb)
 The Naive Bayes model delivered better results and accuracy when using ‘Categories’ to determine the ‘Round’.  We were able to build the model so that it would analyze the text in each category and classify it as either a ‘Jeopardy’ or ‘Final Jeopardy’.  The accuracy for this model was 0.72.
 
